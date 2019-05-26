@@ -1,0 +1,660 @@
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+*.row {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border: none !important;
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url(/fonts/ProximaNova-Regular.otf);
+}
+
+input:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+.col-md-2 {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 780px) {
+  header {
+    height: 90px;
+  }
+}
+
+header .leftSide {
+  background: #2ECC71;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .leftSide .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+header .leftSide .name {
+  color: white;
+}
+
+header .rightSide {
+  padding: 0;
+}
+
+header .rightSide .row {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 780px) {
+  header .rightSide .row {
+    height: 90px;
+  }
+}
+
+header .rightSide .quickIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .rightSide .quickIcons img {
+  height: 20px;
+}
+
+header .rightSide .quickIcons .notification {
+  height: 25px;
+  position: relative;
+}
+
+header .rightSide .quickIcons .notification .badge {
+  position: absolute;
+  top: -11px;
+  right: -5px;
+}
+
+header .rightSide .logo {
+  height: 45px;
+}
+
+header .rightSide .searchBox input {
+  display: block;
+  width: 110px;
+  margin-right: 20px;
+}
+
+header .rightSide .searchBox input :focus {
+  outline: none;
+}
+
+header .rightSide .searchBox .searchIcon {
+  position: relative;
+}
+
+header .rightSide .searchBox .searchIcon :nth-child(1) {
+  height: 13px;
+  top: 0;
+}
+
+header .rightSide .searchBox .searchIcon :nth-child(2) {
+  position: absolute;
+  height: 13px;
+  bottom: 2px;
+  left: 11px;
+}
+
+aside {
+  margin: 0;
+  padding: 0;
+  background: #34495E;
+  color: #95A5A6;
+  cursor: pointer;
+}
+
+aside p {
+  margin: 0;
+  padding: 0;
+}
+
+aside ul {
+  margin: 0;
+  padding: 0;
+}
+
+aside li {
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main {
+  padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.profile {
+  cursor: pointer;
+  height: 150px;
+  background: white;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.profile .profilePhoto {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.profile .stars img {
+  height: 15px;
+}
+
+.profile .userName {
+  font-size: 24px;
+  font-family: "ProximaNova";
+  color: #2c3e50;
+  font-weight: bold;
+  line-height: 0.75;
+  margin: 0;
+  padding: 0;
+  margin-top: 14px;
+  text-align: center;
+}
+
+.profile .learnMore1 {
+  margin: 0;
+  font-size: 16px;
+  font-family: "ProximaNova";
+  color: #7f8c8d;
+  line-height: 1.125;
+  text-align: left;
+  margin-top: 14px;
+  text-align: center;
+}
+
+.profile .learnMore2 {
+  margin: 0;
+  font-size: 16px;
+  font-family: "ProximaNova";
+  color: blue;
+  line-height: 1.125;
+  text-align: left;
+  margin-top: 14px;
+  text-align: center;
+}
+
+.profile .exponencial {
+  font-size: 16px;
+  font-family: "ProximaNova";
+  color: #9ba3af;
+  line-height: 1.125;
+  text-align: left;
+  margin-top: 14px;
+}
+
+.profile .exponencial img {
+  height: 20px;
+  margin-right: 20px;
+}
+
+.profile .logout :nth-child(1) {
+  height: 40px;
+  width: 40px;
+  margin: 0 6px;
+}
+
+.profile .logout :nth-child(2) {
+  height: 40px;
+  width: 40px;
+  margin: 0 6px;
+  position: relative;
+}
+
+.profile .logout :nth-child(2) :nth-child(2) {
+  width: 60px;
+  position: absolute;
+  height: 26px;
+  top: -26px;
+  left: -11px;
+  z-index: 0;
+}
+
+.profile .logout :nth-child(2) .logBadge {
+  opacity: 0;
+}
+
+.profile .logout :nth-child(2) p {
+  z-index: 1;
+  color: white;
+  position: absolute;
+  top: -26px;
+  left: 6px;
+  font-size: 13px;
+}
+
+.profile .logoutButton:hover .logBadge {
+  opacity: 1;
+}
+
+.navbar {
+  background: white;
+  height: 40px;
+  font-size: 14px;
+  font-family: "ProximaNova";
+  color: #2c3e50;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: left;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar p {
+  margin: 0;
+  padding: 0;
+}
+
+.mainBody {
+  margin: 0;
+  padding: 0;
+  background: #ECF0F1;
+}
+
+.mainBody .cards {
+  margin-top: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.mainBody .cards .count {
+  font-size: 34px;
+  font-family: "ProximaNova";
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.529;
+  text-align: center;
+  margin-top: 20px;
+  color: #95a5a6;
+}
+
+.mainBody .cards .cardLeft {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.mainBody .cards .cardRight {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.mainBody .cards .title {
+  font-size: 12px;
+  font-family: "ProximaNova";
+  text-transform: uppercase;
+  text-align: center;
+  color: "color: rgb( 149, 165, 166 )";
+}
+
+.mainBody .cards .list-group-item {
+  font-size: 13px;
+  font-family: "ProximaNova";
+  color: #7f8c8d;
+  line-height: 4.308;
+  text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainBody .cards .list-group-item .messageCount {
+  margin: 0 5px;
+}
+
+.mainBody .cards .showMore {
+  font-size: 12px;
+  font-family: "ProximaNova";
+  color: #2c3e50;
+  line-height: 1.5;
+  text-align: right;
+}
+
+.mainBody .cards .showMore img {
+  height: 7px;
+  width: 7px;
+}
+
+.mainBody .cards .messageContent {
+  margin: 0;
+  padding: 0;
+  margin-left: 30px;
+  display: block;
+  width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.mainBody .cards .mainList :nth-child(1) {
+  border-top: none;
+}
+
+.mainBody .cards .title1 {
+  color: #e67333;
+}
+
+.mainBody .cards .title2 {
+  color: #8e44ad;
+}
+
+.mainBody .cards .title3 {
+  color: #16a085;
+}
+
+.mainBody .cards .count1 {
+  color: #e67333;
+}
+
+.mainBody .cards .count2 {
+  color: #8e44ad;
+}
+
+.mainBody .cards .count3 {
+  color: #16a085;
+}
+
+.mainBody .cards .card-header {
+  background: #ECF0F1;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: 0;
+}
+
+.mainBody .cards .mainList1 li:nth-child(n+4) {
+  display: none;
+}
+
+.mainBody .cards .mainList1 span {
+  cursor: pointer;
+  color: black;
+}
+
+.mainBody .cards .secondaryList1 {
+  color: red;
+}
+
+.mainBody .cards .secondaryList1 li {
+  background: red;
+}
+
+.mainBody .cards .mainList2 li:nth-child(n+4) {
+  display: none;
+}
+
+.mainBody .cards .mainList2 span {
+  cursor: pointer;
+  color: black;
+}
+
+.mainBody .cards .mainList2 li:hover {
+  border-left: 4px solid #8e44ad;
+  background: #f6f8fc;
+}
+
+.mainBody .cards .secondaryList2 {
+  color: yellow;
+}
+
+.mainBody .cards .secondaryList2 li {
+  background: yellow;
+}
+
+.mainBody .cards .mainList3 li:nth-child(n+4) {
+  display: none;
+}
+
+.mainBody .cards .mainList3 span {
+  cursor: pointer;
+  color: black;
+}
+
+.mainBody .cards .secondaryList3 {
+  color: green;
+}
+
+.mainBody .cards .secondaryList3 li {
+  background: green;
+}
+
+.mainBody .mainBottom .experience {
+  background: white;
+  margin-top: 40px;
+}
+
+.mainBody .mainBottom .experience .w3-borders {
+  width: 40px;
+  height: 40px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  background: #ECF0F1;
+}
+
+.mainBody .mainBottom .experience .w3-greens {
+  background: #2ECC71;
+}
+
+.mainBody .mainBottom .experience .statistics img {
+  height: 60px;
+}
+
+.mainBody .mainBottom .experience .gained {
+  font-size: 16px;
+  font-family: "ProximaNova";
+  color: #7f8c8d;
+  line-height: 1.125;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.mainBody .mainBottom .experience .perDay {
+  font-size: 16px;
+  font-family: "ProximaNova";
+  color: #7f8c8d;
+  line-height: 1.125;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.mainBody .mainBottom #chartContainer {
+  color: #2ECC71;
+  height: 120px;
+}
+
+.mainBody .mainBottom .activity {
+  margin-top: 40px;
+  background: white;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  padding-left: 0;
+}
+
+.mainBody .mainBottom .activity .friend-header p {
+  margin: 16px 16px;
+  font-size: 14px;
+  color: #95a5a6;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.mainBody .mainBottom .activity .friend-footer div {
+  margin: 16px 16px;
+}
+
+.mainBody .mainBottom .activity .friend-footer div span,
+.mainBody .mainBottom .activity .friend-footer div i {
+  font-size: 12px;
+  color: #2c3e50;
+  line-height: 1.5;
+}
+
+.mainBody .mainBottom .activity .friend-footer div i {
+  padding-left: 5px;
+}
+
+.mainBody .mainBottom .activity .friend-info {
+  position: relative;
+  padding: 16px 0;
+  cursor: pointer;
+}
+
+.mainBody .mainBottom .activity .friend-info .friend-info-layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 62px;
+}
+
+.mainBody .mainBottom .activity .friend-info .friend-info-layout .hover-sign {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #8e44ad;
+  opacity: 0;
+  width: 6px;
+  height: 62px;
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+}
+
+.mainBody .mainBottom .activity .friend-info .friend-info-layout .transparent {
+  -webkit-transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #a4bedf;
+  height: 62px;
+  z-index: 99;
+  opacity: 0;
+}
+
+.mainBody .mainBottom .activity .friend-info .friend-body img {
+  width: 30px;
+  margin: 0px 16px;
+}
+
+.mainBody .mainBottom .activity .friend-info .friend-body .friend-name {
+  font-size: 12px;
+  color: #3498db;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.mainBody .mainBottom .activity .friend-info .friend-body .friend-activity {
+  color: #7f8c8d;
+}
+
+.mainBody .mainBottom .activity .friend-info .friend-body .friend-topic {
+  font-weight: 500;
+  color: #384b5f;
+}
+
+.mainBody .mainBottom .activity .friend-info-layout:hover > .transparent {
+  opacity: 0.102;
+}
+
+.mainBody .mainBottom .activity .friend-info-layout:hover > .hover-sign {
+  opacity: 1;
+}
+
+.mainBody .mainBottom .activity .friend-publishdate {
+  margin: 0px 16px;
+}
+
+.mainBody .mainBottom .activity .friend-publishdate i {
+  font-size: 12px;
+  padding-right: 10px;
+  color: #bdc3c7;
+}
+
+.mainBody .mainBottom .activity .friend-publishdate .publishtime {
+  font-size: 12px;
+  color: #bdc3c7;
+  line-height: 1.5;
+}
+
+.sidebarClass {
+  background: #243342;
+  color: white;
+}
+
+.navbarClass {
+  border-bottom: 5px solid green;
+}
+
+.cardsClass {
+  background: white;
+}
+/*# sourceMappingURL=styles.css.map */
